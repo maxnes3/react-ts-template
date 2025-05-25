@@ -1,1 +1,16 @@
-.homePage {}
+.homePage {
+  width: 100%;
+}
+
+.container {
+  border-radius: 5px;
+  font-weight: 200;
+  padding: 15px;
+  background-color: var(--title-border);
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
