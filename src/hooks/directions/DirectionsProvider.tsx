@@ -1,6 +1,6 @@
 import { useState, type FC, type ReactNode } from 'react';
 import { DirectionsContext } from './context';
-import type { DirectionResponseDto } from '@/types/directions';
+import type { DirectionWithQualificationAndProfile } from '@/types/directions';
 import { DirectionsService } from '@/api';
 
 const DirectionsContextProvider = DirectionsContext.Provider;
@@ -12,11 +12,13 @@ interface DirectionsProviderProps {
 export const DirectionsProvider: FC<DirectionsProviderProps> = ({
   children,
 }) => {
-  const [directions, setDirections] = useState<DirectionResponseDto[]>([]);
+  const [directions, setDirections] = useState<
+    DirectionWithQualificationAndProfile[]
+  >([]);
 
   const fetchDirections = async () => {
-    await DirectionsService.getAllDirectionsFn();
-    setDirections([]);
+    const response = await DirectionsService.getAllDirectionsFn();
+    setDirections(response);
   };
 
   const contextValue = { directions, fetchDirections };

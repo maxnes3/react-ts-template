@@ -1,8 +1,8 @@
-import type { DirectionResponseDto } from '@/types/directions';
+import type { DirectionWithQualificationAndProfile } from '@/types/directions';
 import { createContext } from 'react';
 
 interface Context {
-  directions: DirectionResponseDto[];
+  directions: DirectionWithQualificationAndProfile[];
   fetchDirections: VoidFunction;
 }
 

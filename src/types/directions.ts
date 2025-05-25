@@ -1,17 +1,25 @@
 export interface QualificationResponseDto {
   id: string;
-  code: string;
+  name: string;
 }
 
 export interface ProfileResponseDto {
   id: string;
-  code: string;
+  name: string;
 }
 
 export interface DirectionResponseDto {
   id: string;
   code: string;
   name: string;
-  qualification: QualificationResponseDto;
-  profile: ProfileResponseDto;
+  qualification_id: string;
+  profile_id: string;
+}
+
+export interface DirectionWithQualificationAndProfile {
+  id: string;
+  code: string;
+  name: string;
+  qualification: string;
+  profile: string;
 }

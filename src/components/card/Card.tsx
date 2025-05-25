@@ -1,4 +1,4 @@
-import type { NewsWithAuthor } from '@/types/news';
+import type { NewsWithAuthor } from '@/types';
 import type { FC } from 'react';
 import classes from './styles.module.scss';
 
