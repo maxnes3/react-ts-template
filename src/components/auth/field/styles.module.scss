@@ -1,0 +1,14 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 18px;
+}
+
+.error {
+  font-size: 10px;
+  color: var(--error-color);
+}

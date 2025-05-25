@@ -19,7 +19,6 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
 
@@ -27,9 +26,13 @@
     "baseUrl": "src",
     "paths": {
       "@/*": ["./*"],
+      "@api/*": ["./api/*"],
       "@app/*": ["./app/*"],
+      "@assets/*": ["./assets/*"],
       "@pages/*": ["./pages/*"],
+      "@types/*": ["./types/*"],
+      "@components/*": ["./components/*"],
     }
   },
-  "include": ["src"]
+  "include": ["src", "declaration.d.ts", "vite-env.d.ts"]
 }

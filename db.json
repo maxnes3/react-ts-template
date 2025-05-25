@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": "a1f5c2e0-8b3d-4e2a-9f7b-1c2d3e4f5a6b",
+      "name": "Корунова Н. В.",
+      "phone": 80000000000,
+      "password": "123456"
+    }
+  ],
+  "news": [
+    {
+      "id": "b2e6d3f1-7c4e-4a2b-8d9e-2f3a4b5c6d7e",
+      "title": "4курс. График гос.экзамена",
+      "content": "Что-то",
+      "author_id": "a1f5c2e0-8b3d-4e2a-9f7b-1c2d3e4f5a6b",
+      "created": "2025-05-22"
+    }
+  ],
+  "directions": [
+    {
+      "id": "c3d7e4f2-9a5b-4c3d-8e7f-3b4c5d6e7f8a",
+      "code": "09.03.03",
+      "name": "Прикладная информатика"
+    }
+  ],
+  "qualifications": [
+    {
+      "id": "d4e8f5a3-1b6c-4d2e-9f8a-4c5d6e7f8a9b",
+      "name": "Бакалавриат"
+    },
+    {
+      "id": "e5f9a6b4-2c7d-4e3f-8a9b-5d6e7f8a9b0c",
+      "name": "Магистратура"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "f6a0b7c5-3d8e-4f4a-9b0c-6e7f8a9b0c1d",
+      "name": "Искусственный интеллект"
+    },
+    {
+      "id": "07b1c8d6-4e9f-4a5b-8c1d-7f8a9b0c1d2e",
+      "name": "Автоматизация бизнес-решений"
+    },
+    {
+      "id": "18c2d9e7-5f0a-4b6c-9d2e-8a9b0c1d2e3f",
+      "name": "Прикладная информатика в экономике"
+    }
+  ],
+  "direction_qualifications": [
+    { "directionId": "c3d7e4f2-9a5b-4c3d-8e7f-3b4c5d6e7f8a", "qualificationId": "d4e8f5a3-1b6c-4d2e-9f8a-4c5d6e7f8a9b" },
+    { "directionId": "c3d7e4f2-9a5b-4c3d-8e7f-3b4c5d6e7f8a", "qualificationId": "e5f9a6b4-2c7d-4e3f-8a9b-5d6e7f8a9b0c" }
+  ],
+  "direction_profiles": [
+    { "directionId": "c3d7e4f2-9a5b-4c3d-8e7f-3b4c5d6e7f8a", "profileId": "f6a0b7c5-3d8e-4f4a-9b0c-6e7f8a9b0c1d" },
+    { "directionId": "c3d7e4f2-9a5b-4c3d-8e7f-3b4c5d6e7f8a", "profileId": "07b1c8d6-4e9f-4a5b-8c1d-7f8a9b0c1d2e" },
+    { "directionId": "c3d7e4f2-9a5b-4c3d-8e7f-3b4c5d6e7f8a", "profileId": "18c2d9e7-5f0a-4b6c-9d2e-8a9b0c1d2e3f" }
+  ]
+}
