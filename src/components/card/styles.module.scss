@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 5px;
+  border-radius: 5px;
+  background-color: var(--card-background);
+  cursor: pointer;
+}
+
+.title {
+  color: var(--blue-text);
+  margin: 0;
+}
+
+.info {
+}

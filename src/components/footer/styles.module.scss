@@ -1,6 +1,7 @@
 .footer {
-  position: static;
+  position: sticky;
   display: flex;
   bottom: 0;
   justify-content: start;
+  padding-top: 15px;
 }

@@ -1,10 +1,10 @@
-import { DirectionsProvider } from '@/hooks/directions';
+import { Title } from '@/components';
 import classes from './styles.module.scss';
 
 export const DirectionsPage = () => {
   return (
-    <DirectionsProvider>
-      <div className={classes.directionsPage}></div>
-    </DirectionsProvider>
+    <div className={classes.directionsPage}>
+      <Title name="Направления обучения" />
+    </div>
   );
 };

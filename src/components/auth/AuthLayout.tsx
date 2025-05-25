@@ -17,7 +17,7 @@ export const AuthLayout: FC<AuthLayoutProps> = ({ children }) => {
           <AuthForm />
         </aside>
       )}
-      {children}
+      <div className={classes.pageContent}>{children}</div>
     </div>
   );
 };

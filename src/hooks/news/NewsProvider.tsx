@@ -14,7 +14,7 @@ export const NewsProvider: FC<NewsProviderProps> = ({ children }) => {
 
   const fetchNews = async () => {
     const response = await NewsService.getAllNewsFn();
-    setNews(response);
+    setNews(response ?? []);
   };
 
   const contextValue = { news, fetchNews };
